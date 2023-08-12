@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MapReduce Simulation </title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <head ><b title="Develop by djgaliaph & Co.">Map Reduce Simulation</b></head>
+        <br>
+        <br>
+        <textarea id="inputText"  placeholder="Enter text..."></textarea>
+        <button id="runButton">Start MapReduce</button>
+        <button onclick="openNewTab('./uploadv.html');">
+      Via Upload
+    </button>
+        <div id="output"></div>
+    </div>
+    <script src="mapreduce.js"></script>
+
+    <script>
+        function openNewTab(url) {
+            const newTab = window.open(url, '_blank');
+            if (newTab) {
+                newTab.focus();
+            } else {
+                alert('Please allow pop-ups for this site to open the link in a new tab.');
+            }
+        }
+        </script>
+        
+
+</body>
+</html>
